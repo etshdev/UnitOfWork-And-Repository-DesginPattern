@@ -17,9 +17,9 @@ namespace Test.DataAccessLayer
         bool InsertRange(IEnumerable<T> entities);
         void InsertWithoutSaveChange(T entity);
         void InsertRangeWithoutSaveChange(IEnumerable<T> entities);
-        Task<bool> InsertAsync();
+        Task<bool> InsertAsync(T entity);
         bool Update(T entity);
-        void UpdateWithoutSaveChange();
+        void UpdateWithoutSaveChange(T entity);
         Task<bool> UpdateAsync(T entity);
         bool Delete(T entity);
         Task<bool> DeleteAsync(T entity);
